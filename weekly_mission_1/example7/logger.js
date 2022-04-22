@@ -6,7 +6,7 @@
     [Module: null prototype] {
         DEFAULT_LEVEL: 'info',
         LEVELS: { error: 0, debug: 1, warn: 2, data: 3, info: 4, verbose: 5 },
-        Looger: [class Logger],
+        Logger: [class Logger],
         log: [Function: log]
     }
 */
