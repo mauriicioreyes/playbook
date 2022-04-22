@@ -1,0 +1,17 @@
+// Example 8: EcmaScript Export Default
+
+/*
+    export default nos permite exportar esta clase e importarla
+
+    import MyLogger from './logger.js'
+*/
+
+export default class Logger {
+    constructor (name) {
+        this.name = name
+    }
+
+    log (message) {
+        console.log(`[${this.name}] ${message}`)
+    }
+}
