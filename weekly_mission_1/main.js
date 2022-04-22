@@ -1,3 +1,5 @@
+// Example 9: Ejercicio 1
+
 const Pokemon = require('./pokemon.js')
 
 const pikachu = new Pokemon("pickachu")

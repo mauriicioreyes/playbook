@@ -1,4 +1,4 @@
-// Example 9: Ejercicio
+// Example 9: Ejercicio 1
 
 class Pokemon {
     constructor(name) {
