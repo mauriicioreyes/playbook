@@ -134,3 +134,45 @@ const score_less_than_80 = scores12.find((user) => user.score > 80)
 
 console.log("\nEjemplo 12. Name score found: " + score_less_than_80.name + "\nScore: " + score_less_than_80.score)
 console.log(scores12)
+
+// Ejemplo 13: Uso de findIndex, este método regresa la posición del primer elemento que cumpla con la validación que indiques.
+const names13 = ['Explorer 1', 'Explorer 2', 'Explorer 3', 'Juanito 25', 'Soy un mensaje', 'A']
+const result = names13.findIndex((name) => name.length > 10)
+
+console.log("\nEjemplo 13: Primer elemento cuya palabra sea mayor a 7 está en la posición: " + result)
+
+
+// Ejemplo 14: Uso de some, este método validará todos los elementos de una lista y si alguno cumple con la validación indicada, regresará true, de lo contrario será false.
+
+// Lista de elementos
+const bools = [true, true, false, true]
+// Uso de Some para ver si al menos uno de los elementos es false
+const areSomeTrue = bools.some((b) => b === false)
+
+console.log("\nEjemplo 14: Alguno de los elementos en el array es false: " + areSomeTrue)
+console.log(bools)
+
+
+// Ejemplo 15: Uso de sort para ordenar elementos
+const products = ['Milk', 'Coffee', 'Sugar', 'Honey', 'Apple', 'Carrot']
+
+console.log("\nEjemplo 15: Elementos ordenados usando SORT")
+console.log(products)
+console.log(products.sort())
+
+
+// Ejemplo 16: Ordenando una lista de objetos
+const users = [
+    { name: 'A', age: 150 },
+    { name: 'B', age: 50 },
+    { name: 'C', age: 100 },
+    { name: 'D', age: 22},
+]
+users.sort((a, b) => {
+    if (a.age < b.age) return -1
+    if (a.age > b.age) return 1
+    return 0
+})
+
+console.log("\nEjemplo 16: Ordenando una lista de objetos por la edad")
+console.log(users) //sorted ascending
